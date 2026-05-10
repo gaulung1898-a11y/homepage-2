@@ -39,13 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  const backToTop = document.getElementById('back-to-top');
-  if (backToTop) {
-    backToTop.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
-
   const jsonLd = document.getElementById('jsonld-restaurant');
   if (jsonLd) {
     jsonLd.textContent = JSON.stringify(
