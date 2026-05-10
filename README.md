@@ -27,7 +27,8 @@ python3 -m http.server 8000
 
 想定URL形式:
 
-- `https://{github_user}.github.io/{repository_name}/`
+- Project Pages: `https://{github_user}.github.io/{repository_name}/`
+- User/Organization Pages（リポジトリ名が `{github_user}.github.io` の場合）: `https://{github_user}.github.io/`
 
 ## 公開後に確認すべきチェックリスト
 
@@ -42,10 +43,19 @@ python3 -m http.server 8000
 ## 差し替え必須項目（公開前）
 
 - `script.js` の `STORE.lineUrl` は現在**仮URL**です。必ず実運用のLINE公式アカウントURLへ差し替えてください。
-- 同様に、電話番号・営業時間・定休日・詳細住所・食べログURLは最新情報で最終確認してください。
+- 電話番号・営業時間・定休日・詳細住所・食べログURLは最新情報で最終確認してください。
 
 ## 実装メモ
 
 - GitHub Pages対応として相対パス（`./styles.css` / `./script.js`）を使用。
-- `script.js` は `DOMContentLoaded` 後に安全なnullチェック付きでDOM反映。
-- 一部要素欠落時でもページ全体が壊れないように例外処理を実装。
+- `.nojekyll` を配置し、GitHub Pagesで不要なJekyll処理を回避。
+- `script.js` は `DOMContentLoaded` 後に、nullチェック付きでDOM反映。
+- タスク単位で `try/catch` を分離し、1つのJSエラーで全機能が止まらない構成。
+
+## 画面セルフレビュー観点
+
+- スマホで見た際、店名・場所・予約方法が3秒で把握できるか
+- 予約ボタン（電話 / LINE）が十分目立つか
+- メニュー情報が読みやすいか
+- アクセス導線（マップ / 食べログ）が分かりやすいか
+- 不明情報を断定せず「仮」「調整中」と明記しているか
