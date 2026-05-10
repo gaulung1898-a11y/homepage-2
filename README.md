@@ -27,3 +27,16 @@ node --check script.js
 python3 -m http.server 8000
 curl -I http://localhost:8000
 ```
+
+## menus-yoshida.html について
+- 吉田町店専用のメニュー詳細ページです。
+- 1ページ内で ランチ / 一品料理 / 定食 / 麺・飯 / テイクアウト / コース / ドリンク を表示します。
+
+## メニュー情報の更新方法
+- `menu-data.js` の `MENU_YOSHIDA` を更新してください。
+- 価格や内容が未確認の場合は「店舗確認中」を維持し、確認後に更新してください。
+
+## 画像差し替え方法
+- 画像は `assets/menu/` に配置し、`menu-data.js` の `heroImage` / `image` を差し替えます。
+- 推奨サイズ: hero 1600x900 / item 1200x800 / webp推奨。
+- 画像は権利確認済み素材のみを使用してください。
