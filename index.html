@@ -3,185 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>中華料理 王府｜吉田町で気軽に使える町中華</title>
+    <title>中華料理 王府｜静岡県榛原郡吉田町の町中華・ランチ・定食</title>
     <meta
       name="description"
-      content="中華料理 王府の公式サイト。ランチ・定食・中華料理を、毎日の暮らしにちょうどよく。電話予約・LINE予約・アクセス情報を掲載。"
+      content="静岡県榛原郡吉田町神戸の中華料理 王府。ランチ、定食、麺類、一品料理など、普段使いしやすい町中華。電話予約、LINE予約、Googleマップ、食べログへの導線を掲載。"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="中華料理 王府｜吉田町で気軽に使える町中華" />
+    <meta property="og:title" content="中華料理 王府｜静岡県榛原郡吉田町の町中華・ランチ・定食" />
     <meta
       property="og:description"
-      content="中華料理 王府の公式サイト。ランチ・定食・中華料理を、毎日の暮らしにちょうどよく。"
+      content="静岡県榛原郡吉田町神戸の中華料理 王府。ランチ、定食、麺類、一品料理など、普段使いしやすい町中華。"
     />
     <meta property="og:url" content="https://gaulung1898-a11y.github.io/homepage-2/" />
     <link rel="stylesheet" href="./styles.css" />
     <script type="application/ld+json" id="jsonld-restaurant"></script>
   </head>
   <body>
-    <header class="site-header" id="top">
-      <div class="container header-inner">
-        <a class="brand" href="#top">中華料理 王府</a>
-        <div class="header-actions">
-          <a id="header-phone" class="header-phone" href="#" aria-label="電話予約">☎</a>
-          <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="global-nav">
-            <span></span><span></span><span></span>
-            <span class="sr-only">メニューを開閉</span>
-          </button>
-        </div>
+    <header class="header" id="top">
+      <div class="logo-block">
+        <p class="logo-kicker">中華料理</p>
+        <p class="logo-sub">静岡・吉田町</p>
+        <p class="logo-main">王府</p>
+        <p class="logo-en">Chinese Restaurant Wangfu</p>
       </div>
-      <nav id="global-nav" class="global-nav" aria-label="グローバルメニュー">
-        <a href="#news">お知らせ</a>
-        <a href="#about">王府の魅力</a>
-        <a href="#menu">おすすめメニュー</a>
-        <a href="#store">店舗情報</a>
-        <a href="#faq">FAQ</a>
-      </nav>
+      <div class="header-actions">
+        <a id="header-phone" class="phone-icon" href="tel:0548889066" aria-label="電話予約">☎</a>
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="global-nav">
+          <span></span><span></span><span></span>
+          <span class="sr-only">メニューを開閉</span>
+        </button>
+      </div>
     </header>
 
+    <nav id="global-nav" class="global-nav" aria-label="グローバルメニュー">
+      <a href="#top">HOME</a>
+      <a href="#intro">店舗案内</a>
+      <a href="#menu-feature-a">おすすめメニュー</a>
+      <a href="#access">アクセス</a>
+      <a id="nav-tabelog" href="#" target="_blank" rel="noopener noreferrer">食べログ</a>
+    </nav>
+
     <main>
-      <section class="hero section">
-        <div class="hero-media">
-          <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=1500&q=80" alt="麻婆豆腐や炒飯など王府らしい中華料理" loading="eager" />
+      <section class="hero">
+        <div class="hero-image" role="img" aria-label="料理を盛り付けた大皿のイメージ">
+          <div class="plate"></div>
+          <div class="dish dish-main"></div>
+          <div class="dish dish-side"></div>
+          <div class="greens"></div>
         </div>
-        <div class="container hero-overlay">
-          <div class="hero-panel">
-            <p class="eyebrow">吉田町で気軽に使える町中華</p>
-            <h1>中華料理 王府</h1>
-            <p class="lead">ランチ・定食・中華料理を、毎日の暮らしにちょうどよく。</p>
-            <div class="cta-row">
-              <a id="hero-phone" class="btn btn-fill" href="#">電話予約</a>
-              <a id="hero-line" class="btn btn-outline" href="#">LINE予約</a>
-            </div>
-            <div class="hero-sub-links">
-              <a id="hero-map" href="#" target="_blank" rel="noopener noreferrer">Googleマップ</a>
-              <a id="hero-tabelog" href="#" target="_blank" rel="noopener noreferrer">食べログ</a>
-            </div>
+        <div class="hero-copy">
+          <p class="hero-lead">気軽に味わう、吉田町の中国料理。</p>
+          <p class="hero-title-line">中華料理 王府</p>
+          <p class="hero-sub">ランチ、定食、麺類、一品料理。毎日の食事にちょうどいい町中華です。</p>
+          <div class="hero-links">
+            <a id="hero-phone" class="button-outline button-primary" href="#">電話予約</a>
+            <a id="hero-map" class="button-outline" href="#" target="_blank" rel="noopener noreferrer">Googleマップ</a>
+            <a id="hero-tabelog" class="button-outline" href="#" target="_blank" rel="noopener noreferrer">食べログ</a>
+            <a id="hero-line" class="button-outline" href="#">LINE予約</a>
           </div>
         </div>
       </section>
 
-      <section id="news" class="section">
-        <div class="container narrow">
-          <p class="eyebrow">News</p>
-          <h2>お知らせ</h2>
-          <ul class="news-list">
-            <li><time datetime="2026-05-01">2026.05.01</time><p>GW期間の営業は通常通りです。</p></li>
-            <li><time datetime="2026-04-20">2026.04.20</time><p>テイクアウト相談の受付時間を更新しました。</p></li>
-            <li><time datetime="2026-04-08">2026.04.08</time><p>おすすめメニューに「焼き餃子」を追加しました。</p></li>
-            <li><time datetime="2026-03-28">2026.03.28</time><p>公式サイトをリニューアルしました。</p></li>
-          </ul>
+      <section id="news" class="section-news">
+        <h2 class="section-title">お知らせ</h2>
+        <div class="news-list">
+          <article class="news-item"><p class="news-date">2026/05/10</p><p class="news-title">ホームページ公開準備中</p></article>
+          <article class="news-item"><p class="news-date">2026/05/10</p><p class="news-title">営業時間・定休日は店舗確認後に更新します</p></article>
+          <article class="news-item"><p class="news-date">2026/05/10</p><p class="news-title">テイクアウトのご相談はお電話で承ります</p></article>
         </div>
       </section>
 
-      <section id="about" class="section section-soft">
-        <div class="container">
-          <p class="eyebrow">About</p>
-          <h2>王府の魅力</h2>
-          <div class="feature-list">
-            <article>
-              <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=900&q=80" alt="中華料理のテーブル風景" loading="lazy" />
-              <div><h3>地元で使いやすい</h3><p>気軽な昼食から家族の夕食まで。日常に馴染む、入りやすい町中華です。</p></div>
-            </article>
-            <article>
-              <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80" alt="ランチ向けの中華定食" loading="lazy" />
-              <div><h3>ランチ・定食に便利</h3><p>定番の中華メニューを中心に、短い休憩でも満足しやすい構成です。</p></div>
-            </article>
-            <article>
-              <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=900&q=80" alt="テイクアウト容器に入った料理" loading="lazy" />
-              <div><h3>テイクアウト相談OK</h3><p>受け取り時間や内容は電話・LINEで相談可能。忙しい日にも使いやすく。</p></div>
-            </article>
-          </div>
+      <section id="intro" class="intro-section">
+        <div class="intro-panel">
+          <h2 class="intro-heading">吉田町で気軽に立ち寄れる<br />中華料理店</h2>
+          <div class="heading-line"></div>
+          <p class="intro-text">中華料理 王府は、静岡県榛原郡吉田町神戸にある町中華です。ランチ、定食、麺類、一品料理まで、普段の食事に使いやすい料理を揃えています。おひとりでも、ご家族でも、仕事の合間にも立ち寄りやすいお店を目指しています。</p>
+          <p class="section-link-wrap"><a class="button-outline" href="#access">店舗案内</a></p>
         </div>
       </section>
 
-      <section id="menu" class="section">
-        <div class="container">
-          <p class="eyebrow">Recommend</p>
-          <h2>おすすめメニュー</h2>
-          <div class="menu-showcase">
-            <article><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="麻婆豆腐" loading="lazy" /><p>定食</p><h3>麻婆豆腐</h3><p>コクと辛味のバランスがよい、王府の定番人気。</p></article>
-            <article><img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=80" alt="五目炒飯" loading="lazy" /><p>ご飯もの</p><h3>五目炒飯</h3><p>香ばしさと具材の旨味を感じる、飽きのこない一皿。</p></article>
-            <article><img src="https://images.unsplash.com/photo-1557872943-16a5ac26437e?auto=format&fit=crop&w=900&q=80" alt="醤油ラーメン" loading="lazy" /><p>麺類</p><h3>醤油ラーメン</h3><p>すっきりとした醤油スープで、毎日でも食べやすく。</p></article>
-            <article><img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=900&q=80" alt="焼き餃子" loading="lazy" /><p>一品料理</p><h3>焼き餃子</h3><p>香ばしい焼き目とジューシーな餡で、つい頼みたくなる定番。</p></article>
-          </div>
-          <p class="menu-link-wrap"><a class="btn btn-outline" href="#store">メニューを見る</a></p>
+      <section id="menu-feature-a" class="menu-feature">
+        <div class="menu-photo" role="img" aria-label="麻婆豆腐と炒飯を連想する料理イメージ"></div>
+        <p class="menu-kicker">ごはんが進む定番中華</p>
+        <h2 class="menu-title">麻婆豆腐・炒飯・麺類</h2>
+        <p class="menu-text">香り、旨み、食べごたえを大切にした、普段使いの中華料理。ランチにも夕食にも選びやすい定番を揃えます。</p>
+        <p class="section-link-wrap"><a class="button-outline" href="#menu-list">おすすめメニュー</a></p>
+      </section>
+
+      <section class="menu-feature">
+        <div class="menu-photo menu-photo-alt" role="img" aria-label="家族で囲む町中華の食卓イメージ"></div>
+        <p class="menu-kicker">ひとりでも、家族でも</p>
+        <h2 class="menu-title">気軽に使える町中華</h2>
+        <p class="menu-text">短い休憩の昼食、仕事帰りの一皿、ご家族での食事まで。肩肘張らずに使えるお店としてご案内します。</p>
+        <p class="section-link-wrap"><a class="button-outline" href="#contact">利用シーン</a></p>
+      </section>
+
+      <section id="menu-list" class="menu-list-section">
+        <div class="list-nav">
+          <a class="list-row" href="#">麻婆豆腐</a>
+          <a class="list-row" href="#">五目炒飯</a>
+          <a class="list-row" href="#">醤油ラーメン</a>
+          <a class="list-row" href="#">焼き餃子</a>
+          <a class="list-row" href="#">定食</a>
+          <a class="list-row" href="#">テイクアウト相談</a>
         </div>
       </section>
 
-      <section class="section section-soft">
-        <div class="container narrow">
-          <p class="eyebrow">Scenes</p>
-          <h2>利用シーン</h2>
-          <ul class="scene-list">
-            <li><h3>平日ランチ</h3><p>短いお昼休憩でも立ち寄りやすい、定食中心の構成です。</p></li>
-            <li><h3>仕事帰り</h3><p>麺・飯・一品を組み合わせて、気軽な夜ごはんに。</p></li>
-            <li><h3>家族利用</h3><p>取り分けしやすい料理で、世代を問わず楽しみやすく。</p></li>
-            <li><h3>ひとり飯</h3><p>一人でも入りやすい空気感で、さっと食事したい日にも。</p></li>
-            <li><h3>テイクアウト相談</h3><p>受け取り時間・数量を事前相談して、スムーズに持ち帰り。</p></li>
-          </ul>
-        </div>
+      <section id="contact" class="contact-section">
+        <p class="contact-store">中華料理 王府</p>
+        <h2 class="contact-title">ご予約・お問い合わせ</h2>
+        <p class="contact-text">ご予約やお問い合わせは、お電話または下記導線よりご連絡ください。混雑時はお電話でのご確認が確実です。メニューやテイクアウトのご相談も承ります。</p>
+        <a id="contact-phone" class="contact-phone" href="#">0548-88-9066</a>
+        <p class="contact-meta">営業時間　店舗確認中</p>
+        <p class="contact-meta">定休日　店舗確認中</p>
+        <p class="section-link-wrap"><a id="contact-line" class="button-outline" href="#">お問い合わせ</a></p>
       </section>
 
-      <section id="store" class="section">
-        <div class="container store-layout">
-          <div>
-            <p class="eyebrow">Store Info</p>
-            <h2>店舗情報</h2>
-            <dl class="store-table">
-              <dt>住所</dt><dd id="store-address">静岡県榛原郡吉田町神戸63-1</dd>
-              <dt>電話</dt><dd><a id="store-phone" href="#">0548-88-9066</a></dd>
-              <dt>営業時間</dt><dd id="store-hours">店舗確認中</dd>
-              <dt>定休日</dt><dd id="store-holiday">店舗確認中</dd>
-              <dt>駐車場</dt><dd id="store-parking">店舗確認中</dd>
-            </dl>
-          </div>
-          <div>
-            <p class="eyebrow">Access</p>
-            <h2>アクセス</h2>
-            <div class="access-links">
-              <a id="access-map" class="btn btn-outline" href="#" target="_blank" rel="noopener noreferrer">Googleマップで開く</a>
-              <a id="access-tabelog" class="btn btn-outline" href="#" target="_blank" rel="noopener noreferrer">食べログで見る</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="faq" class="section section-soft">
-        <div class="container narrow">
-          <p class="eyebrow">FAQ</p>
-          <h2>よくある質問</h2>
-          <div class="faq-list">
-            <article class="faq-item"><button class="faq-q" aria-expanded="false">予約できますか？</button><div class="faq-a"><p>はい。お電話またはLINEから予約相談が可能です。</p></div></article>
-            <article class="faq-item"><button class="faq-q" aria-expanded="false">駐車場はありますか？</button><div class="faq-a"><p>駐車場情報は現在、店舗確認中です。来店前にお電話でご確認ください。</p></div></article>
-            <article class="faq-item"><button class="faq-q" aria-expanded="false">テイクアウトできますか？</button><div class="faq-a"><p>料理内容や受け取り時間は電話・LINEでご相談ください。</p></div></article>
-            <article class="faq-item"><button class="faq-q" aria-expanded="false">ひとりでも入りやすいですか？</button><div class="faq-a"><p>カジュアルに使える町中華なので、おひとり様でも気兼ねなくご利用いただけます。</p></div></article>
-            <article class="faq-item"><button class="faq-q" aria-expanded="false">子ども連れでも大丈夫ですか？</button><div class="faq-a"><p>ご家族での利用もしやすい雰囲気です。席状況は事前にご確認ください。</p></div></article>
-          </div>
+      <section id="access" class="access-section">
+        <a id="access-map" class="map-placeholder" href="#" target="_blank" rel="noopener noreferrer">Googleマップで場所を確認</a>
+        <div class="access-info">
+          <p>店名　中華料理 王府</p>
+          <p id="store-address">住所　静岡県榛原郡吉田町神戸63-1</p>
+          <p>電話　<a id="store-phone" href="#">0548-88-9066</a></p>
+          <p>営業時間　店舗確認中</p>
+          <p>定休日　店舗確認中</p>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <p class="footer-title">中華料理 王府</p>
-          <p id="footer-address">静岡県榛原郡吉田町神戸63-1</p>
-        </div>
-        <div class="footer-links">
-          <a id="footer-phone" href="#">電話予約</a>
-          <a id="footer-line" href="#">LINE予約</a>
-          <a id="footer-map" href="#" target="_blank" rel="noopener noreferrer">Googleマップ</a>
-          <a id="footer-tabelog" href="#" target="_blank" rel="noopener noreferrer">食べログ</a>
-        </div>
+    <footer class="footer">
+      <div class="footer-nav">
+        <a href="#top">HOME</a>
+        <a href="#intro">店舗案内</a>
+        <a href="#menu-feature-a">おすすめメニュー</a>
+        <a href="#access">アクセス</a>
+        <a id="footer-tabelog" href="#" target="_blank" rel="noopener noreferrer">食べログ</a>
+        <a id="footer-map" href="#" target="_blank" rel="noopener noreferrer">Googleマップ</a>
+        <a id="footer-line" href="#">LINE予約</a>
       </div>
-      <p class="copyright">© 中華料理 王府</p>
+      <p class="copyright">© 中華料理 王府<br />静岡県榛原郡吉田町神戸63-1</p>
     </footer>
 
-    <nav class="fixed-cta" aria-label="固定CTA">
-      <a id="fixed-phone" href="#">電話予約</a>
-      <a id="fixed-line" href="#">LINE予約</a>
-    </nav>
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="ページ上部へ戻る">↑</button>
 
     <script src="./script.js" defer></script>
   </body>
