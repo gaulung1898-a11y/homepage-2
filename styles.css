@@ -19,6 +19,9 @@ body {
 }
 a { color: inherit; text-decoration: none; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+.mobile-browser-banner { position: sticky; top: 0; z-index: 50; background: #eef4d8; border-bottom: 1px solid #b7cf58; padding: 12px 16px; display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+.mobile-browser-banner p { margin: 0; font-size: 12px; line-height: 1.6; letter-spacing: 0.06em; }
+.mobile-browser-banner a { border: 1px solid #111; padding: 8px 12px; font-size: 12px; white-space: nowrap; background: #fff; }
 .header { height: 180px; padding: 42px 24px 24px; display: flex; justify-content: space-between; align-items: flex-start; background: #fff; }
 .logo-kicker { color: var(--red-small); font-size: 14px; line-height: 1.5; letter-spacing: 0.12em; margin: 0 0 8px; }
 .logo-sub { margin: 0 0 12px; font-size: 14px; }
@@ -32,12 +35,7 @@ a { color: inherit; text-decoration: none; }
 .global-nav.is-open { max-height: 500px; }
 .global-nav a { display: block; padding: 14px 24px; border-bottom: 1px solid #111; font-size: 14px; font-family: "Noto Sans JP", sans-serif; }
 .hero { background: #fff; padding: 0 0 72px; }
-.hero-image { width: 100%; height: 520px; overflow: hidden; position: relative; background: #f4f4f4; }
-.plate { position: absolute; width: 140%; height: 140%; border-radius: 50%; left: -24%; top: -32%; background: radial-gradient(circle at 48% 52%, #fafbfd 0 44%, #bfd0df 44% 47%, #fefefe 47% 100%); }
-.dish { position: absolute; border-radius: 50%; filter: saturate(0.95); }
-.dish-main { width: 66%; height: 52%; left: 14%; top: 30%; background: radial-gradient(circle at 45% 38%, #c67b49 0 28%, #a5442e 28% 68%, #8e3322 68% 100%); }
-.dish-side { width: 34%; height: 26%; left: 52%; top: 22%; background: radial-gradient(circle at 50% 40%, #d8a874 0 24%, #b45a35 24% 70%, #8c3a27 70% 100%); }
-.greens { position: absolute; width: 38%; height: 20%; left: 46%; top: 46%; border-radius: 50%; background: radial-gradient(circle at 50% 50%, #8aaa52 0 34%, #6e8942 34% 100%); }
+.hero-image { width: 100%; height: auto; aspect-ratio: 16 / 9; display: block; object-fit: cover; background: #f4f4f4; }
 .hero-copy { padding: 32px 28px 0; text-align: center; }
 .hero-lead { font-size: 20px; letter-spacing: 0.12em; margin: 0; }
 .hero-title-line { margin: 28px 0 0; display: inline-block; background: rgba(250,250,250,0.9); padding: 14px 24px; font-size: 22px; letter-spacing: 0.16em; }

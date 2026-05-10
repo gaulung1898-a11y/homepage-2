@@ -46,6 +46,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const mobileBanner = document.getElementById('mobile-browser-banner');
+  const browserVersionLink = document.getElementById('open-browser-version');
+  const isSmallScreen = window.matchMedia('(max-width: 768px)').matches;
+  const ua = navigator.userAgent || '';
+  const isInAppBrowser = /(Line|Instagram|FBAN|FBAV|Twitter|wv)/i.test(ua);
+  if (mobileBanner && browserVersionLink && isSmallScreen && isInAppBrowser) {
+    mobileBanner.hidden = false;
+    browserVersionLink.href = window.location.href;
+  }
+
   const jsonLd = document.getElementById('jsonld-restaurant');
   if (jsonLd) {
     jsonLd.textContent = JSON.stringify(

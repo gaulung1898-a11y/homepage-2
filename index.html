@@ -19,6 +19,11 @@
     <script type="application/ld+json" id="jsonld-restaurant"></script>
   </head>
   <body>
+    <div id="mobile-browser-banner" class="mobile-browser-banner" hidden>
+      <p>表示が不安定な場合は、ブラウザ版で開くと安定して閲覧できます。</p>
+      <a id="open-browser-version" href="#" target="_blank" rel="noopener noreferrer">ブラウザ版を開く</a>
+    </div>
+
     <header class="header" id="top">
       <div class="logo-block">
         <p class="logo-kicker">中華料理</p>
@@ -45,12 +50,16 @@
 
     <main>
       <section class="hero">
-        <div class="hero-image" role="img" aria-label="料理を盛り付けた大皿のイメージ">
-          <div class="plate"></div>
-          <div class="dish dish-main"></div>
-          <div class="dish dish-side"></div>
-          <div class="greens"></div>
-        </div>
+        <img
+          class="hero-image"
+          src="./assets/wangfu-hero.svg"
+          alt="王府の料理イメージ"
+          width="1600"
+          height="900"
+          fetchpriority="high"
+          loading="eager"
+          decoding="sync"
+        />
         <div class="hero-copy">
           <p class="hero-lead">気軽に味わう、吉田町の中国料理。</p>
           <p class="hero-title-line">中華料理 王府</p>
